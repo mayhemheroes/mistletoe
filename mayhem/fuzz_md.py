@@ -16,7 +16,7 @@ def TestOneInput(data):
     with fdp.ConsumeTemporaryFile('.md', all_data=False, as_bytes=False) as Hfin:
         with HTMLRenderer() as renderer:
             doc = Document(Hfin)
-            renderer.render(doc)
+            renderer.render((doc))
 
 def main():
     atheris.Setup(sys.argv, TestOneInput)

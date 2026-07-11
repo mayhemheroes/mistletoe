@@ -1,0 +1,8 @@
+project: mistletoe
+target: fuzz-md
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-md/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-md
+    libfuzzer: true
